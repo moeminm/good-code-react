@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Signika', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar{
+  padding: 0;
+}
+
+.navbar-nav{
+  align-items: center;
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh;
+  margin-top: 40px;
+  padding: 4.375rem;
+  background-color: #FCF8F2;
+}
+
+.hero__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hero__right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.hero__heading--primary {
+  display: block;
+  font-size: 2.8125rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.hero__heading--sub {
+  display: block;
+  font-size: 1rem;
+  color: #A1A1A1;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  color: white;
+  background-color: #5222D0;
+  padding: 22px 38px;
+  border-radius: 5px;
+  text-decoration: none;
+  max-width: 100%;
+  border: none;
+}
+
+.cta.download {
+  display: inline-block;
+  text-align: center;
+  font-weight: 800;
+  width: 100%;
+}
+
+.cta:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #6c43d4;
+}
+
+.challenges {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  margin-top: 80px;
+}
+
+.challenges__card {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 82px -32px #919191;
+          box-shadow: 10px 10px 82px -32px #919191;
+  position: relative;
+}
+
+.challenges__card--price {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #5222D0;
+  font-weight: 700;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 999px;
+}
+
+.challenges__card--img {
+  width: 100%;
+}
+
+.challenges__card--img img {
+  width: 100%;
+}
+
+.challenges__content {
+  padding: 20px;
+}
+
+.challenges__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.challenges__heading--primary {
+  font-size: 1.25rem;
+}
+
+.challenges__desc {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.challenges__tag {
+  display: inline-block;
+  background-color: #77BFFF;
+  font-size: 0.875rem;
+  color: #004E94;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.challenges__tag:not(:last-child) {
+  margin-right: 5px;
+}
+
+.modalDescription{
+  display: none;
+}
+
+.modalShow{
+  display: block;
+}
+
+.modal-body {
+  font-weight: 300;
+}
+
+.modal__included {
+  margin-top: 20px;
+}
+
+.modal__title {
+  font-size: 1.4rem;
+}
+
+.modal__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+svg {
+  fill: #14b988;
+  margin-right: 10px;
+}
+
+#linkHide{
+  display: none;
+}
+
+#linkShow{
+  display:block;
+}
+
+.formHide{
+  display: none;
+}
+
+.formShow{
+  display: block;
+}
+
+#formWrapper{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #5222D0;
+}
+
+.footer__links {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__links:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__links:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+@media only screen and (max-width: 968px) {
+  ul:not(:last-child), li:not(:last-child) {
+    margin-right: 0px !important;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 70vh;
+    padding: 2rem;
+    margin-top: 40px;
+  }
+  .hero__heading--primary {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .hero__heading--sub {
+    display: block;
+    font-size: 1rem;
+    color: #A1A1A1;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .challenges {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+  }
+  .challenges__card {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 82px -32px #919191;
+            box-shadow: 10px 10px 82px -32px #919191;
+    position: relative;
+  }
+  .challenges__card--img img {
+    width: 100%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    background-color: #5222D0;
+  }
+  .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__links {
+    text-decoration: none;
+    color: white;
+  }
+  .footer__links:not(:last-child) {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .footer .navbar-brand {
+    margin-right: 0;
+  }
+  .footer .logo {
+    max-width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 968px) and (max-width: 1216px) {
+  .hero {
+    height: 70vh;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .logo {
+    max-width: 60%;
+  }
+}

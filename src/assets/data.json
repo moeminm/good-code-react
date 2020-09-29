@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "image":"/images/jjo.png",
+        "price": "Free",
+        "title": "JJO",
+        "tags": ["HTML", "CSS"],
+        "description": "Simple Job Board layout in Adobe XD. You will learn a lot about grids and or flex layouts as well as containers, Readme.md file included. Free."
+    },
+    {
+        "id":2,
+        "price": "$5",
+        "image":"/images/gourmet.png",
+        "title": "Gourmet",
+        "tags": ["HTML", "CSS"],
+        "description": "Practice your HTML and CSS skills with the high quality Gourmet Adobe XD template, includes mega menu. Readme.md file included. Costs $5."
+    },
+    {
+        "id":3,
+        "price": "Free",
+        "image":"/images/apt.png",
+        "title": "Price.io",
+        "tags": ["HTML", "CSS"],
+        "description": "Amazon Price Tracker. Lots of great layout challenges with various components and pages (and graphs!). Readme.md file included. Free."
+    },
+    {
+        "id":4,
+        "price": "Free",
+        "image":"/images/inv.png",
+        "title": "Invitation",
+        "tags": ["HTML", "CSS"],
+        "description": "Practice your HTML and CSS skills with the Invitation Adobe XD template. 3 column grid practice (or flex). Readme.md file included. Free."
+    },
+    {
+        "id":5,
+        "price": "Free",
+        "image":"./images/ppt.png",
+        "title": "Pricing Page",
+        "tags": ["HTML", "CSS"],
+        "description": "Simple pricing page, 3 column grid, easy to implement, modern and simple. Readme.md file included. Absolutely free of charge."
+    },
+    {
+        "id":6,
+        "price": "Free",
+        "image":"/images/signtemplate.png",
+        "title": "Sign Up Page",
+        "tags": ["HTML", "CSS"],
+        "description": "Simple sign up page, 2 column grid, easy to implement, modern and simple. Readme.md file included. Absolutely free of charge."
+    },
+    {
+        "id":7,
+        "price": "Free",
+        "image":"/images/design.png",
+        "title": "desi.gn",
+        "tags": ["HTML", "CSS"],
+        "description": "A landing page for an unlimited revisions design agency. Great to work on your flex/grid layouts. Free of charge."
+    }
+]
